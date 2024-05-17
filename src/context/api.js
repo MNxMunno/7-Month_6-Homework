@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery, retry } from "@reduxjs/toolkit/query/react";
 
 const baseQuery = fetchBaseQuery({
   // Asosiy API URL
-  baseUrl: "https://dummyjson.com",
+  baseUrl: "https://66361b4e415f4e1a5e264953.mockapi.io/api",
   prepareHeaders: (headers) => {
     const token = localStorage.getItem("token");
     if (token) {
@@ -14,7 +14,7 @@ const baseQuery = fetchBaseQuery({
 });
 
 // Qayta urinish soni
-const baseQueryWithRetry = retry(baseQuery, { maxRetries: 1 });
+const baseQueryWithRetry = retry(baseQuery, { maxRetries: 0 });
 
 export const api = createApi({
   reducerPath: "mainApi",

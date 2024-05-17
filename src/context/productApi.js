@@ -10,12 +10,12 @@ export const productApi = api.injectEndpoints({
       }),
       providesTags: ["Product"],
     }),
-    getDetailProducts: build.query({
-      query: (id) => ({
-        url: `/products/${id}`,
-      }),
-      providesTags: ["Product"],
-    }),
+    // getDetailProducts: build.query({
+    //   query: (id) => ({
+    //     url: `/products/${id}`,
+    //   }),
+    //   providesTags: ["Product"],
+    // }),
   }),
 });
 

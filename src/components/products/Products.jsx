@@ -9,7 +9,7 @@ const Products = () => {
     <section className="products">
       <div className="container">
         <div className="cards">
-          <Cart data={data?.products} />
+          <Cart data={data} />
         </div>
       </div>
     </section>

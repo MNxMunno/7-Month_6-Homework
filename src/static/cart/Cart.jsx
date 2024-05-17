@@ -16,10 +16,10 @@ const Cart = ({ data }) => {
   let card = data?.map((el) => (
     <div className="card" key={el.id}>
       <div className="content">
-        <Link to={`/product/${el.id}`}>
-          <img src={el.images[0]} alt={el.title} />
-        </Link>
+        <img src={el.url} alt={el.title} />
+
         {/* <img src={el.images[0]} alt={el.title} /> */}
+
         <div className="btns">
           <button onClick={() => dispatch(toggleHeart(el))}>
             {wishlist?.some((item) => item.id === el.id) ? (
@@ -36,6 +36,7 @@ const Cart = ({ data }) => {
           </button>
         </div>
       </div>
+      <h1>{el.title}</h1>
     </div>
   ));
   return (
