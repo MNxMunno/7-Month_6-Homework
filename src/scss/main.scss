@@ -44,6 +44,31 @@ main {
   padding-top: 120px;
 }
 
+form {
+  padding: 30px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 32px;
+  input {
+    outline: none;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 30%;
+  }
+  button {
+    background: #53ea3c;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.2s;
+    &:hover {
+      background: #2b841d;
+    }
+  }
+}
+
 @import "./components/header";
 @import "./components/notFound";
 @import "./components/products";

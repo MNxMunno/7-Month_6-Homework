@@ -24,6 +24,7 @@ const CreateProduct = () => {
       <h2>CreateProduct</h2>
       <form onSubmit={handleSubmit}>
         <input
+          required
           value={newProduct.title}
           onChange={(e) =>
             setNewProduct((prev) => ({ ...prev, title: e.target.value }))
@@ -31,6 +32,7 @@ const CreateProduct = () => {
           type="text"
           name=""
           id=""
+          placeholder="Title"
         />
         <input
           value={newProduct.description}
@@ -40,6 +42,8 @@ const CreateProduct = () => {
           type="text"
           name=""
           id=""
+          required
+          placeholder="Description"
         />
         <input
           value={newProduct.price}
@@ -49,6 +53,8 @@ const CreateProduct = () => {
           type="number"
           name=""
           id=""
+          required
+          placeholder="Price"
         />
         <button disabled={isLoading}>
           {isLoading ? "Loading..." : "Create"}

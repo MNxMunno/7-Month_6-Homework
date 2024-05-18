@@ -24,6 +24,7 @@ const CreateUSer = () => {
       <h2>CreateUSer</h2>
       <form onSubmit={handleSubmit}>
         <input
+          required
           value={newUser.firsname}
           onChange={(e) =>
             setNewUser((prev) => ({ ...prev, firsname: e.target.value }))
@@ -31,6 +32,7 @@ const CreateUSer = () => {
           type="text"
           name=""
           id=""
+          placeholder="First name"
         />
         <input
           value={newUser.lastname}
@@ -40,6 +42,8 @@ const CreateUSer = () => {
           type="text"
           name=""
           id=""
+          placeholder="Last name"
+          required
         />
         <input
           value={newUser.age}
@@ -49,6 +53,8 @@ const CreateUSer = () => {
           type="number"
           name=""
           id=""
+          required
+          placeholder="Age"
         />
         <button disabled={isLoading}>
           {isLoading ? "Loading..." : "Create"}
