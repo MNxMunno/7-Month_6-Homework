@@ -7,7 +7,7 @@ const Users = () => {
   console.log(data);
 
   return (
-    <div>
+    <div style={{ paddingTop: "40px" }}>
       <Cart data={data} />
     </div>
   );
