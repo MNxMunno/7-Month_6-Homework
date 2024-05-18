@@ -1,10 +1,11 @@
 import React from "react";
-import { FaHeart, FaHome, FaShoppingCart } from "react-icons/fa";
+import { FaHeart, FaHome, FaShoppingCart, FaUsers } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/images/logo.svg";
 import logo_2 from "../../assets/images/logo_2.svg";
 import { GrContact } from "react-icons/gr";
 import { CiSearch } from "react-icons/ci";
+import { RiAdminFill } from "react-icons/ri";
 
 const Header = () => {
   return (
@@ -20,7 +21,7 @@ const Header = () => {
               <p className="link">Home</p>
             </NavLink>
             <NavLink className="link_par" to={"/users"}>
-              <FaShoppingCart className="icon" />
+              <FaUsers className="icon" />
               <p className="link">Users</p>
             </NavLink>
             <NavLink className="link_par" to={"/wishlist"}>
@@ -30,9 +31,9 @@ const Header = () => {
             <NavLink className="logo" to={"/"}>
               <img src={logo} alt="" />
             </NavLink>
-            <NavLink className="link_par" to={"/contact"}>
-              <GrContact className="icon" />
-              <p className="link">Contact Us</p>
+            <NavLink className="link_par" to={"/admin"}>
+              <RiAdminFill className="icon" />
+              <p className="link">Admin</p>
             </NavLink>
           </div>
           <div className="nav__btns">

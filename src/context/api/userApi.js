@@ -1,35 +1,35 @@
 import { api } from "./api";
 
-export const productApi = api.injectEndpoints({
+export const usersApi = api.injectEndpoints({
   endpoints: (build) => ({
     // Get request
-    getProducts: build.query({
+    getUsers: build.query({
       query: (params) => ({
-        url: "/products",
+        url: "/users",
         params,
       }),
-      providesTags: ["Product"],
+      providesTags: ["Users"],
     }),
     deleteUsers: build.mutation({
       query: (id) => ({
-        url: `/products/${id}`,
+        url: `/users/${id}`,
         method: "DELETE",
       }),
-      invalidatesTags: ["Product"],
+      invalidatesTags: ["Users"],
     }),
-    postProducts: build.mutation({
+    postUsers: build.mutation({
       query: (body) => ({
-        url: "/products",
+        url: "/users",
         body,
         method: "POST",
       }),
-      invalidatesTags: ["Product"],
+      invalidatesTags: ["Users"],
     }),
   }),
 });
 
 export const {
-  useGetProductsQuery,
+  useGetUsersQuery,
   useDeleteUsersMutation,
-  usePostProductsMutation,
-} = productApi;
+  usePostUsersMutation,
+} = usersApi;

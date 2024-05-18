@@ -78,6 +78,22 @@
         text-align: left;
         padding-top: 6px;
         color: #46a358;
+
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+      }
+      .delete {
+        background: red;
+        color: #fff;
+        padding: 5px;
+        border-radius: 8px;
+        margin-top: 10px;
+        transition: 0.2s;
+        &:hover {
+          background: rgb(193, 5, 5);
+        }
       }
     }
   }

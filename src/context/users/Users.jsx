@@ -1,6 +1,6 @@
 import React from "react";
 import Cart from "../../static/cart/Cart";
-import { useGetUsersQuery } from "../api/userSlice";
+import { useGetUsersQuery } from "../api/userApi";
 
 const Users = () => {
   const { data } = useGetUsersQuery();

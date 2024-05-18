@@ -40,13 +40,16 @@ main {
   padding-top: 80px;
 }
 
+.admin {
+  padding-top: 120px;
+}
+
 @import "./components/header";
 @import "./components/notFound";
 @import "./components/products";
-
 @import "./routers/home";
 @import "./routers/singleRoute";
 @import "./routers/wishlist";
-
+@import "./routers/admin";
 @import "./static/btn";
 @import "./static/cart";
