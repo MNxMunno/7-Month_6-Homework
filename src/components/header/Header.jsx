@@ -19,9 +19,9 @@ const Header = () => {
               <FaHome className="icon" />
               <p className="link">Home</p>
             </NavLink>
-            <NavLink className="link_par" to={"/shop"}>
+            <NavLink className="link_par" to={"/users"}>
               <FaShoppingCart className="icon" />
-              <p className="link">Shop All</p>
+              <p className="link">Users</p>
             </NavLink>
             <NavLink className="link_par" to={"/wishlist"}>
               <FaHeart className="icon" />

@@ -1,5 +1,5 @@
 import React from "react";
-import { useGetProductsQuery } from "../../context/productApi";
+import { useGetProductsQuery } from "../../context/api/productApi";
 import Cart from "../../static/cart/Cart";
 
 const Products = () => {

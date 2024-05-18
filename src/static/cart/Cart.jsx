@@ -6,7 +6,7 @@ import { FaHeart, FaRegHeart } from "react-icons/fa";
 import { IoCartOutline } from "react-icons/io5";
 import { MdAddShoppingCart } from "react-icons/md";
 import { CiSearch } from "react-icons/ci";
-import { toggleHeart } from "../../context/wishlistSlice";
+import { toggleHeart } from "../../context/slice/wishlistSlice";
 
 const Cart = ({ data }) => {
   let wishlist = useSelector((state) => state.wishlist.value);
